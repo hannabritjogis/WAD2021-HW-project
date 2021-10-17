@@ -3,7 +3,10 @@ function toggleDropdown() {
 }
 
 window.onclick = function (event) {
-  if (!event.target.matches(".dropbtn") && !event.target.matches(".dropbtn .user_icon")) {
+  if (
+    !event.target.matches(".dropbtn") &&
+    !event.target.matches(".dropbtn .user_icon")
+  ) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
