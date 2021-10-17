@@ -19,13 +19,19 @@
         <div class="search-container">
           <input type="text" /><button>Search</button>
         </div>
-        <div>
-          <img
-            class="user_icon"
-            src="res/images/unknown-person-icon-4.png"
-            alt="UserIcon"
-            height="30"
-          />
+        <div class="dropdown">
+          <button onclick="toggleDropdown()" class="dropbtn">
+            <img
+              class="user_icon"
+              src="res/images/unknown-person-icon-4.png"
+              alt="UserIcon"
+              height="30"
+            />
+          </button>
+          <div id="userDropdown" class="dropdown-content">
+            <a>I hate this</a>
+            <a>I hate this so much</a>
+          </div>
         </div>
       </nav>
     </header>
