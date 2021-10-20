@@ -86,7 +86,7 @@ section {
 
 .post-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .post h5 {
@@ -102,10 +102,26 @@ section {
   font-weight: bolder;
 }
 
-img + h5 {
-  color: cadetblue;
+img ~ h5 {
+  color: darkolivegreen;
 }
-
+#create-time{
+  color: darkcyan;
+}
+#avatar{
+  height: 25px;
+  border-radius: 4px;
+}
+#name{
+  font-weight: bold;
+}
+#url{
+  margin: 5px, 5px;
+  justify-content: flex-start;
+  height: 20px;
+  border-radius: 4px;
+  text-align: left;
+}
 .post button:hover {
   cursor: pointer;
 }
